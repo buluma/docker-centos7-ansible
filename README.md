@@ -1,6 +1,6 @@
 # CentOS 7 Ansible Test Image
 
-[![Build Status](https://travis-ci.org/geerlingguy/docker-centos7-ansible.svg?branch=master)](https://travis-ci.org/geerlingguy/docker-centos7-ansible) [![Docker Automated build](https://img.shields.io/docker/automated/geerlingguy/docker-centos7-ansible.svg?maxAge=2592000)](https://hub.docker.com/r/geerlingguy/docker-centos7-ansible/)
+[![Ansible check centos:centos7](https://github.com/buluma/docker-centos7-ansible/actions/workflows/ansible-centos-centos7.yml/badge.svg)](https://github.com/buluma/docker-centos7-ansible/actions/workflows/ansible-centos-centos7.yml) [![Docker Automated build](https://img.shields.io/docker/automated/buluma/docker-centos7-ansible.svg?maxAge=2592000)](https://hub.docker.com/r/buluma/docker-centos7-ansible/)
 
 CentOS 7 Docker container for Ansible playbook and role testing.
 
