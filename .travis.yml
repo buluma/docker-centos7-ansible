@@ -8,7 +8,7 @@ before_install:
 
 script:
   # Test building Dockerfile.
-  - docker build -t docker-ansible .
+  - docker build -t buluma/docker-centos7-ansible .
 
   # Test running the container.
   - docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro docker-ansible
