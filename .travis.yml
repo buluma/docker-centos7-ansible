@@ -11,7 +11,7 @@ script:
   - docker build -t buluma/docker-centos7-ansible .
 
   # Test running the container.
-  - docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro docker-ansible
+  - docker run --name test-container -d --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:ro docker-centos7-ansible
 
   # Verify Ansible is available in the container.
   - docker exec --tty test-container env TERM=xterm ansible --version
