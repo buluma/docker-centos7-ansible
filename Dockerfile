@@ -22,7 +22,7 @@ RUN yum makecache fast \
  && yum -y install \
       sudo \
       which \
-      python-pip \
+      python3-pip \
  && yum clean all
 
 # Upgrade Pip
