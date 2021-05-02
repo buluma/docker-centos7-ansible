@@ -1,5 +1,5 @@
 FROM centos:7
-LABEL maintainer="Jeff Geerling"
+LABEL maintainer="Buluma Michael"
 ENV container=docker
 
 ENV pip_packages "ansible"
@@ -24,6 +24,9 @@ RUN yum makecache fast \
       which \
       python-pip \
  && yum clean all
+
+# Upgrade Pip
+RUN pip install --upgrade pip
 
 # Install Ansible via Pip.
 RUN pip install $pip_packages
