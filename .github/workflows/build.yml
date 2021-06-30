@@ -1,5 +1,5 @@
 ---
-name: Build and release image
+name: Build
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: "10 1 * * 0"
+    - cron: "50 * * *"
 
 jobs:
   # Test the image builds and works correctly.
@@ -50,6 +50,6 @@ jobs:
         with:
           context: ./
           file: Dockerfile
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
           push: true
           tags: ${{ github.repository }}:latest
