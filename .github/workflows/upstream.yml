@@ -5,7 +5,7 @@ on:
     # scheduled for every 1hr
   push:
     paths:
-      - '.github/workflows/upstream.yaml'
+      - '.github/workflows/upstream.yml'
 
 jobs:
   merge-upstream:
