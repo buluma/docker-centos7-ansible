@@ -14,11 +14,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: main             # set the branch to merge to
+          ref: master             # set the branch to merge to
           fetch-depth: 0 
       - name: Merge Upstream
         uses: exions/merge-upstream@v1
         with:
           upstream: geerlingguy/docker-centos7-ansible      # set the upstream repo
-          upstream-branch: master   # set the upstream branch to merge from
+          upstream-branch: master # set the upstream branch to merge from
           branch: master          # set the branch to merge to
